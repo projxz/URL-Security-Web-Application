@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head%}
+        <title>
+            URL CHECKER
+        </title>
+{% endblock %}
+{% block body%}
+    <img src="/static/OIP.jpg">
+        <h1>Website URL Checker</h1>
+    <form action="/check" method='POST'>
+        <p> <input type="url" id="url" name='url' placeholder="Enter your URL"> <input type="submit" id="ScanWebsite" value="Scan URL"></p>
+        <p> <input type="Result" placeholder="Result" id="Result" value="{{post}}"> </p>
+    </form>
+
+{% endblock %}
